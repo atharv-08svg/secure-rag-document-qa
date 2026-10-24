@@ -1,0 +1,14 @@
+
+services:
+  api:
+    build: .
+    container_name: rag-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./app.db:/app/app.db
+      - ./chroma_db:/app/chroma_db
+      - ./documents:/app/documents
+    restart: unless-stopped

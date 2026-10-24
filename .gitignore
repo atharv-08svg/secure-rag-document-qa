@@ -1,0 +1,31 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local databases and vector storage
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+
+# Uploaded documents
+documents/
+uploads/
+
+# macOS and IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
